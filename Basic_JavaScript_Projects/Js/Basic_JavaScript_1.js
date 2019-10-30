@@ -37,8 +37,6 @@ document.write(Dad + Mom + Daughter + Daughter2);
 document.write(9+54);
 
 
-
-
 function myFirstFunction() {
 	var str = "This text is green";
 	var result = str.fontcolor("green");
