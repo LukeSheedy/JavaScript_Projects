@@ -7,7 +7,7 @@ document.write(A);
 document.write("Pie Pie barked at Stella, \"Hey you!\" Stella replied,\"yes?!\" then went on.")
 
 
-var B ="String varable"
+var B ="String varable for step45"
 window.alert(B);
 
 var C = ("\"Keep Hustling until you cant,"
@@ -36,9 +36,3 @@ document.write(Dad + Mom + Daughter + Daughter2);
 
 document.write(9+54);
 
-
-function myFirstFunction() {
-	var str = "This text is green";
-	var result = str.fontcolor("green");
-	document.getElementById("Green_Text").innerHTML = result;
-}
