@@ -36,3 +36,6 @@ document.write(Dad + Mom + Daughter + Daughter2);
 
 document.write(9+54);
 
+function myClick () {
+    document.getElementById('Date').innerHTML = Date()
+}
