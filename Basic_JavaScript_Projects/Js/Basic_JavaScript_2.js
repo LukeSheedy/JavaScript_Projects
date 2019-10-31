@@ -12,3 +12,6 @@ function myFunction() {
         sentence += "a lot from this book!";
         document.getElementById("Step62").innerHTML = sentence;
 }
+
+
+
