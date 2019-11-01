@@ -51,3 +51,11 @@ function my_Function4() {
     var rep= isNaN("007");
 	document.getElementById("Test4").innerHTML = rep;
 }
+
+function not_Function() {
+    document.getElementById("Not").innerHTML = !(5 > 10);
+}
+
+function not_Function2() {
+    document.getElementById("Not2").innerHTML = !(20 > 10);
+}
