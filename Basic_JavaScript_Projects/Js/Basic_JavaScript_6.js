@@ -1,16 +1,4 @@
 
-function Person(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
-    var myFather = new Person("John", "Doe", 50, "blue");
-    document.getElementById("test").innerHTML =
-    "My father is " + myFather.age + "."; 
-}
-
-
-
 function Ride_Function() {
 	var Height, Can_ride;
 	Height = document.getElementById("Height").value;

@@ -1,5 +1,5 @@
 
-
+X =10 /* This is the global variable*/
 
 function Add_numbers_1 () {
     var X =10;
@@ -30,12 +30,15 @@ function Add_numbers_5() {
 	console.log(15 + X);
 }
 function Add_numbers_6() {
+    var X =20 /*added X here to finish off the bug in the code instead of using the global variable*/
 	console.log(X + 100);
 }
 Add_numbers_5();
 Add_numbers_6();
 
-function get_Date(){
+/*step 130 ran error in Chrome Dev then fixed and noted*/
+
+function get_Date(){ /*step 133 */
 	if (new Date().getHours()<20){
 	document.getElementById("Time").innerHTML = "Have a goodnight!";
     }
@@ -48,7 +51,7 @@ function myNumber(){
 }
 
 
-function GuessFunction(){
+function GuessFunction(){  /* this is for step 136? */
     Guess = document.getElementById("Guessing").value;
     if (Guess >= 5) {
         Answer = "Thats the winning number!"
@@ -59,7 +62,7 @@ function GuessFunction(){
     document.getElementById("Winorlose").innerHTML = Answer;
 }
 
-function Time_function(){
+function Time_function(){ /* For step 138*/
 	var Time = new Date().getHours();
 	var Reply;
 	if (Time < 12 == Time > 0 ) {
@@ -75,3 +78,8 @@ function Time_function(){
 }
 
 
+function myNumber(){
+    if ( 1 < 2) {
+	document.write("the left number is smaller than the right.")
+    }
+}
