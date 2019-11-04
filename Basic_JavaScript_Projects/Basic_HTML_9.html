@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Js/Basic_JavaScript_9.js"></script>
+    <link rel="stylesheet" type="text/css" href="Css/Basic_Css_1.css">
+</head>
+<body>  
+    <div>
+        <div>
+            <p> How many seconds would you like to set your alarm for?</p>
+            <input id="seconds" value=""/>
+            <button onclick="countdown()">Push to Start</button>
+            <p id="timer"></p>
+        </div>
+
+                <!-- Slideshow  -->
+                <div class="slideshow-container">
+                
+                 <!-- Full-width images with number and caption text , fixed hight so all will be uniform -->
+                <div class="mySlides fade">
+                  <div class="cornertext">1 / 3</div>
+                  <img src="Img/Pete_4.jpg" style="width:100%; height:400px;">
+                  <div class="text">Truckstop Pete</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="cornertext">2 / 3</div>
+                  <img src="Img/Pete_5.jpg" style="width:100%; height:400px;">
+                  <div class="text">Night time Pete</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="cornertext">3 / 3</div>
+                  <img src="Img/Pete_3.1.jpg" style="width:100%; height:400px;">
+                  <div class="text">Working Pete</div>
+                </div>
+                
+                <!-- Defines what the buttons do on the sides-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                <!-- Little Progress dots to see where in the slide -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+    
+</body>
+</html>
