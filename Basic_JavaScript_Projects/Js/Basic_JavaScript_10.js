@@ -81,7 +81,7 @@ function Breaking(){
     document.getElementById("Break").innerHTML = text;
 }
 
-function Continue() {
+function Continue() {// FOR STEP 201!!
     var text = "";
     var i;
     for (i = 0; i < 6; i++) {
