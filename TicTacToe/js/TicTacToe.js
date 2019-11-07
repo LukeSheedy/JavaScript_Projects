@@ -20,6 +20,7 @@ function rollForTurn() {
         ranNum = Math.floor(Math.random()*(maximum - minimum)+ minimum)
         xArray.push(ranNum);
     }
+    }
     diceRoll(); // play dice sounds during the game roll for turn
     //build the string to show wchich player rolled what die role
     for (i=0;i<xArray.length;i++){

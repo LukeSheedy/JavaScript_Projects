@@ -95,7 +95,7 @@ keys.addEventListener('click', (event) => {
     // that was clikced
     const {target} = event;
     // if the element that was clicked is not a button, exit the function
-    if(!target.mathces("button")) {
+    if(!target.matches("button")) {
         return;
     }
     if (target.classList.contains("operator")) {
@@ -116,5 +116,4 @@ keys.addEventListener('click', (event) => {
     }
     Input_Digit(target.value);
     Update_Display();
-
 })
