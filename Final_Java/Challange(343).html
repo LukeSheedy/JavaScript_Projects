@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel= "stylesheet" type="text/css" href= "Challlange(344).css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
+</head>
+<body>
+   
+   
+    <div>
+        <button class="button" onclick="Besticky()">Button</button>
+    </div>
+    
+
+    <h1 id="home"style="font-size: 8vw;">KEEP WORKING!</h1>
+    <p style="font-size:2vw;">Resize the browser window to see how the font size scales.</p>
+    <a href="https://www.youtube.com/watch?time_continue=44&v=gtLcr01D6pw&feature=emb_logo">Click for Insperation</a>
+    
+     <div>
+		<div> 
+			<ul>
+				<a href="#home" ><li>Home</li></a>
+				<a href="#truck" ><li>Rig Photos</li></a>
+				<a href="#christmas"><li>Christmas</li></a>
+			</ul>
+		</div>
+	</div>
+
+    <div>
+        <form name="myForm" action="Challange(345).js" onsubmit="return validateForm()" method="post">
+            Phone Number:<br>
+            <input type="text" name="PhoneNumber"><br>
+            <input type="submit" value="Submit">
+        </form>
+    
+
+
+        <div id="truck">
+            <img src="Truck.jpg" class="single-featured-image-header small" alt="Custom Pete">
+        </div>
+
+    </div>
+    <div id="slideshow">
+            <div>
+                <img class="small" src="Truck2.jpg">
+            </div>
+            <div>
+              <img class="small" src="Truck4.jpg">
+            </div>
+            <div>
+              <img class="small" src="Truck3.jpg">
+            </div>
+            <div>
+              KEEP CODING!!
+        </div>
+    </div>
+
+
+    <div>
+        <button class="open-button" onclick="openForm()">STICKY BUTTON</button>
+         <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+    
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+    
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+    
+                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+    <div id="christmas" class="Christ">Hope you have a Merry Christmas!!</div>
+    <div>
+        <div> 
+            <ul>
+                <a href="#home" ><li>Home</li></a>
+                <a href="#truck" ><li>Rig Photos</li></a>
+             </ul>
+        </div>
+    </div>
+
+
+    <script>
+    document.body.className += ' fade-out';
+    $(function() {
+    $('body').removeClass('fade-out');
+    });
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() { 
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        },    3000);
+
+
+
+    </script>
+    <script src="Challange(345).js"></script>
+</body>
+</html>
